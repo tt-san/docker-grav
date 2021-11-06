@@ -1,0 +1,10 @@
+version: '3'
+services:
+  grav:
+    build: ./grav-df
+    ports:
+      - 80:80
+    volumes:
+      - grav-data:/var/www/html
+volumes:
+  grav-data:
